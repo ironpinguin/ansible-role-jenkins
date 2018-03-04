@@ -7,10 +7,10 @@ env:
     playbook: test.yml
     prefix: ''
     http_port: 8080
-  - distro: fedora27
-    site: test.yml
-    prefix: ''
-    http_port: 8080
+#  - distro: fedora27
+#    site: test.yml
+#    prefix: ''
+#    http_port: 8080
   - distro: ubuntu1604
     playbook: test.yml
     prefix: ''
@@ -19,10 +19,10 @@ env:
     playbook: test.yml
     prefix: ''
     http_port: 8080
-  - distro: debian8
-    playbook: test.yml
-    prefix: ''
-    http_port: 8080
+#  - distro: debian8
+#    playbook: test.yml
+#    prefix: ''
+#    http_port: 8080
 
   # tests/test-http-port.yml
   - distro: ubuntu1604
@@ -70,7 +70,7 @@ script:
   - export cleanup=false
 
   # Download test shim.
-  - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/geerlingguy/73ef1e5ee45d8694570f334be385e181/raw/
+  - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/buluma/3e4a443e0e2cfdffa9137edff909917e/raw/
   - chmod +x ${PWD}/tests/test.sh
 
   # Run tests.
