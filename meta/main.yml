@@ -3,9 +3,9 @@ dependencies:
   - geerlingguy.java
 
 galaxy_info:
-  author: geerlingguy
+  author: buluma
   description: Jenkins CI
-  company: "Midwestern Mac, LLC"
+  company: "ShadowNet"
   license: "license (BSD, MIT)"
   min_ansible_version: 2.2
   platforms:
